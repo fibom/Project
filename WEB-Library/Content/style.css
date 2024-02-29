@@ -37,10 +37,16 @@
     --z-fixed: 100;
 }
 
+*{
+    padding:0;
+    margin:0;
+
+}
 
 
 body{
     background:white;
+    box-sizing:border-box;
 }
 
 .header {
@@ -51,7 +57,7 @@ body{
     left: 0;
     z-index: var(--z-fixed);
     transition: .4s; /*For animation dark mode*/
-    border: 1px solid black;
+   
 }
 
 .nav {
@@ -59,7 +65,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+   
 }
 .nav__logo,
 .nav__toggle,
@@ -118,18 +124,26 @@ body{
         color: var(--first-color);
     }
 
-.nav__menu{
-    border:1px solid black;
-    
+
+.first-box {
+    height: 50vh;
+}
+.second-box {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+    .second-box.image-box img{
+        width:30%;
+    }
 
-
-.section-books {
-    width:100%;
-    height:100vh;
-    background: #0F1713;
-}
+    .section-books {
+        width: 100%;
+        height: 100vh;
+        background: #0F1713;
+    }
 /*=============== BUTTONS ===============*/
 .button {
     display: inline-block;
