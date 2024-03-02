@@ -184,6 +184,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Shared\_myLayoutPage.cshtml" />
     <Content Include="Views\Shared\Index.cshtml" />
+    <Content Include="Views\Shared\_MenuBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
