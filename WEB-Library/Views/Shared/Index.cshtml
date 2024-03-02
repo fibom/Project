@@ -3,11 +3,11 @@
     Layout = "~/Views/Shared/_myLayoutPage.cshtml";
 }
 <link rel="stylesheet" href="~/Content/Site.css" />
-<div class="row">
+<body>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                WEB-Library
+               WEB-Library
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -16,31 +16,28 @@
                         <a href="index.html" class="nav__link active-link">Main Page</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About us</a>
+                        <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
-                        <a href="catalog.html" class="nav__link">Categories</a>
+                        <a href="catalog.html" class="nav__link">Shop</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#faqs" class="nav__link">Shop</a>
+                        <a href="#faqs" class="nav__link">Contact</a>
                     </li>
                     <li class="nav__item">
-                        <a href="log.html" class="nav__link">Admin page</a>
+                        <a href="log.html" class="nav__link">Admin Page</a>
                     </li>
                 </ul>
 
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
+               
             </div>
 
-            <div class="nav__btns">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </div>
+           
         </nav>
     </header>
+
+
+
 
     <!--==================== HOME ====================-->
     <section class="home" id="home">
@@ -51,10 +48,12 @@
             </div>
             <form>
                 <h1> Welcome to the Web-Library</h1>
-                <input  placeholder="Search"/>
+                <input placeholder="Search" />
                 <button>S</button>
-                <p>Explore our extensive web site library, featuring a diverse <br />
-                collection of resources tailored to meet your needs.</p>
+                <p>
+                    Explore our extensive web site library, featuring a diverse <br />
+                    collection of resources tailored to meet your needs.
+                </p>
             </form>
 
             <div class="Image-box" style="margin-right:70px;">
@@ -67,12 +66,13 @@
                 <p>Lorer Hety</p>
             </div>
         </div>
+
         <hr>
 
         <div class="Second-Box">
-            
+
             <div class="image-box">
-               
+
                 <img src="~/Content/Images/d5bazwrc.png" width="100%">
                 <p>Lorer Hety</p>
             </div>
@@ -111,80 +111,10 @@
 
     </section>
 
-    <!--==================== ABOUT ====================-->
-    <section class="about section container" id="about">
-        <div class="about__container grid">
-            <img src="~/Content/Images/d5bazwrc.png" alt="" class="about__img">
+    
 
-            <div class="about__data">
-                <h2 class="section__title about__title">
-                    Web Library & <br> Online Shoping
-                </h2>
 
-                <p class="about__description">
-                    Explore our extensive web site library, featuring a diverse <br />
-                    collection of resources tailored to meet your needs
-                </p>
 
-                <div class="about__details">
-                    <p class="about__details-description">
-                        <i class="ri-checkbox-fill about__details-icon"></i>
-                        Всегда выполняем работу в заданный срок
-                    </p>
-                    <p class="about__details-description">
-                        <i class="ri-checkbox-fill about__details-icon"></i>
-                        Учитываем все предпочтения клиента.
-                    </p>
-                    <p class="about__details-description">
-                        <i class="ri-checkbox-fill about__details-icon"></i>
-                        Гарантируем полную безопасность во время мероприятия.
-                    </p>
-                    <p class="about__details-description">
-                        <i class="ri-checkbox-fill about__details-icon"></i>
-                        Допускаем возможность оплаты частями
-                    </p>
-                </div>
 
-                <a href="#" class="button--link button--flex">
-                    Learn more <i class="ri-arrow-right-down-line button__icon"></i>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!--==================== STEPS ====================-->
-    <section class="steps section container">
-        <div class="steps__bg">
-            <h2 class="section__title-center steps__title">
-                Как оформить заказ <br> прямо сейчас
-            </h2>
-
-            <div class="steps__container grid">
-                <div class="steps__card">
-                    <div class="steps__card-number">01</div>
-                    <h3 class="steps__card-title">Выбери мероприятие</h3>
-                    <p class="steps__card-description">
-                        У нас есть разные категории книг и товаров
-                    </p>
-                </div>
-
-                <div class="steps__card">
-                    <div class="steps__card-number">02</div>
-                    <h3 class="steps__card-title">Оставь заявку</h3>
-                    <p class="steps__card-description">
-                        Вы можете оставить заявку на нашем сайте и мы свяжемся с вами.
-                    </p>
-                </div>
-
-                <div class="steps__card">
-                    <div class="steps__card-number">03</div>
-                    <h3 class="steps__card-title">Консультация</h3>
-                    <p class="steps__card-description">
-                        С Вами свяжется наш оператор для дальнейшего обсуждения.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
+</body>
