@@ -2,18 +2,18 @@
     ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_myLayoutPage.cshtml";
 }
-<link rel="stylesheet" href="~/Content/Site.css" />
-<body>
+
+@model string
     
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="~/Content/Site.css" />
+<script src="~/Scripts/Script.js"></script>
+<body>
 
-
-
-
-    <!--==================== HOME ====================-->
     <section class="home" id="home">
         <div class="First-Box">
             <div class="Image-box">
-                <img src="~/Content/Images/2.jpg" / width="100%">
+                <img src="~/Content/Images/2.jpg" id="getBookButton" width="100%">
                 <p>Lorer Hety</p>
             </div>
             <form>
@@ -79,12 +79,15 @@
 
         </div>
 
+
     </section>
 
+    <div id="bookDetails">
+        <h2>@Model</h2>
+    </div>
+
     
-
-
-
+    <div id="bookDetails"></div>
 
 
 </body>
