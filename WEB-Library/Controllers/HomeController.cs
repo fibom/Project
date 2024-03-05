@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -46,10 +47,15 @@ namespace WEB_Library.Controllers
 
     public class BookController : Controller
     {
-        public ActionResult GetBook()
+        public ActionResult Search(string query)
         {
-            var book = new Book { Title = "ASP.NET MVC Guide" };
-            return Json(new { title = book.Title }, JsonRequestBehavior.AllowGet);
+            
+            var bookInfo = new
+            {
+                title = "Название книги: " + query,
+                imageUrl = Url.Content("~/Images/2.jpg")
+            };
+            return Content(JsonConvert.SerializeObject(bookInfo), "application/json");
         }
     }
 }

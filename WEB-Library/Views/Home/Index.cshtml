@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_myLayoutPage.cshtml";
 }
 
-@model string
+@model WEB_Library.Models.Book
     
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="~/Content/Site.css" />
@@ -14,12 +14,13 @@
         <div class="First-Box">
             <div class="Image-box">
                 <img src="~/Content/Images/2.jpg" id="getBookButton" width="100%">
-                <p>Lorer Hety</p>
+                <p>@Model</p>
             </div>
             <form>
                 <h1> Welcome to the Web-Library</h1>
-                <input placeholder="Search" />
-                <button>S</button>
+
+                <input type="text" id="searchInput" placeholder="Search" />
+                <button id="searchButton" >S</button>
                 <p>
                     Explore our extensive web site library, featuring a diverse <br />
                     collection of resources tailored to meet your needs.
@@ -82,11 +83,15 @@
 
     </section>
 
+
+    <div id="bookInfo">
+        <h2 id="bookTitle"></h2>
+        <img id="bookImage" src="" alt="">
+    </div>
+
     <div id="bookDetails">
         <h2>@Model</h2>
     </div>
-
-    
     <div id="bookDetails"></div>
 
 
