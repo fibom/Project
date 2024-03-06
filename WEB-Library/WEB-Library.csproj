@@ -190,6 +190,7 @@
     <Content Include="Views\Shared\_MenuBar.cshtml" />
     <Content Include="Views\Home\AdminPage.cshtml" />
     <Content Include="Views\Home\Shop.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
