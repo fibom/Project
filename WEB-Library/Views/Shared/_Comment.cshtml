@@ -1,0 +1,20 @@
+﻿<body>
+<section class="Comment">
+    <h2>Comment</h2>
+    <button id="commentButton">Write your comment</button>
+    <form id="commentForm" style="display: none;" method="post">
+        <label for="commentName">Your name:</label>
+        <input type="text" id="commentName" name="commentName" required>
+        <label for="commentText">Your comment:</label>
+        <textarea id="commentText" name="commentText" rows="5" required></textarea>
+        <button type="submit">Send comment</button>
+    </form>
+</section>
+    </main>
+<script>const commentButton = document.getElementById('commentButton');
+    const commentForm = document.getElementById('commentForm');
+
+    commentButton.addEventListener('click', () => {
+        commentForm.style.display = commentForm.style.display === 'none' ? 'block' : 'none';
+    });</script>
+    </body>
