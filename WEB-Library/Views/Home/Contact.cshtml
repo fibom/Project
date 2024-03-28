@@ -1,19 +1,58 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/Contact.css">
+</head>
+<body>
+    <header>
+        <h1>Contacts</h1>
+    </header>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
-</main>
+    <main aria-labelledby="title">
+        <h2 id="title">@ViewBag.Title</h2>
+        <h3>@ViewBag.Message</h3>
+
+        <section class="contact-info">
+            <h2>Contact with us</h2>
+            <p>
+                Address:<br>
+                One Microsoft Way<br>
+                Redmond, WA 98052-6399
+            </p>
+            <p>
+                Phone:<br>
+                425.555.0100
+            </p>
+            <p>
+                Email:<br>
+                <a href="mailto:info@example.com">info@example.com</a>
+            </p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Write us</h2>
+            <form action="/Contact/Submit" method="post">
+                <label for="name">Your namee:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        
+
+
+</body>
+</html>
