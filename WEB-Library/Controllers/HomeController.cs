@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using System;
 using WEB_Library.Models;
+using System.Linq;
 
 public class HomeController : Controller
 {
@@ -66,12 +67,20 @@ public class HomeController : Controller
     }
     public ActionResult Donation()
     {
-        // получаем из бд все объекты Book
-        IEnumerable<Book> bookss = db.Books;
-        // передаем все объекты в динамическое свойство Books в ViewBag
-        ViewBag.Books = bookss;
-        // возвращаем представление
+        return View();
+    }
+
+
+    public ActionResult Library()
+    {
+        using (ReadContext db = new ReadContext())
+        {
+            IEnumerable<Read> reads = db.Reads.ToList();
+            ViewBag.Reads = reads;
+        }
 
         return View();
     }
+
+
 }

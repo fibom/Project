@@ -16,6 +16,7 @@ namespace WEB_Library
         {
             Database.SetInitializer(new BookDbInitializer());
             Database.SetInitializer(new UserDbInitializer());
+            Database.SetInitializer(new ReadDbInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -1,0 +1,61 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 600px; /* Уменьшили ширину формы */
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    main h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.donation-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Уменьшили отступ между элементами */
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 6px; /* Уменьшили отступ между меткой и полем */
+        font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="number"],
+    .form-group textarea {
+        width: 100%;
+        padding: 6px; /* Уменьшили внутренние отступы */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form-group button {
+        padding: 8px 16px; /* Уменьшили размер кнопки */
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }

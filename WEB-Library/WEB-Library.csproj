@@ -135,6 +135,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentController.cs" />
+    <Compile Include="Controllers\ReadController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -143,6 +144,9 @@
     <Compile Include="Models\BookContext.cs" />
     <Compile Include="Models\BookDbInitializer.cs" />
     <Compile Include="Models\Purchase.cs" />
+    <Compile Include="Models\Read.cs" />
+    <Compile Include="Models\ReadContext.cs" />
+    <Compile Include="Models\ReadDbInitializer.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserContext.cs" />
     <Compile Include="Models\UserDbInitializer.cs" />
@@ -170,10 +174,20 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\donation.css" />
+    <Content Include="Content\Images\1.jpg" />
+    <Content Include="Content\Images\12.jpg" />
+    <Content Include="Content\Images\13.jpg" />
+    <Content Include="Content\Images\14.jpg" />
+    <Content Include="Content\Images\15.jpg" />
+    <Content Include="Content\Images\16.jpg" />
+    <Content Include="Content\Images\17.jpg" />
+    <Content Include="Content\Images\18.jpg" />
+    <Content Include="Content\Images\19.jpg" />
     <Content Include="Content\Images\2.jpg" />
+    <Content Include="Content\Images\20.jpg" />
     <Content Include="Content\Images\3.jpg" />
     <Content Include="Content\Images\4.png" />
-    <Content Include="Content\Images\435583-0.jpeg" />
     <Content Include="Content\Images\4522407326f51c40c24701f99d5ed077-removebg-preview.png" />
     <Content Include="Content\Images\5.jpg" />
     <Content Include="Content\Images\6.jpg" />
@@ -190,6 +204,19 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\PDFs\2.pdf" />
+    <Content Include="Content\PDFs\1.pdf" />
+    <Content Include="Content\PDFs\11.pdf" />
+    <Content Include="Content\PDFs\9.pdf" />
+    <Content Include="Content\PDFs\12.pdf" />
+    <Content Include="Content\PDFs\13.pdf" />
+    <Content Include="Content\PDFs\14.pdf" />
+    <Content Include="Content\PDFs\15.pdf" />
+    <Content Include="Content\PDFs\16.pdf" />
+    <Content Include="Content\PDFs\17.pdf" />
+    <Content Include="Content\PDFs\18.pdf" />
+    <Content Include="Content\PDFs\19.pdf" />
+    <Content Include="Content\PDFs\20.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -225,11 +252,13 @@
     <Content Include="Views\Home\Buy.cshtml" />
     <Content Include="Views\Home\Registration.cshtml" />
     <Content Include="Views\Shared\_myregistration.cshtml" />
+    <Content Include="Views\Home\Library.cshtml" />
     <Content Include="Views\Home\Donation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Account\" />
     <Folder Include="Views\Payment\" />
+    <Folder Include="Views\Read\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
