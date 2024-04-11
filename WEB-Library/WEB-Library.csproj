@@ -132,7 +132,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccessController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Controllers\ReadController.cs" />
@@ -144,6 +146,9 @@
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookContext.cs" />
     <Compile Include="Models\BookDbInitializer.cs" />
+    <Compile Include="Models\DatabaseInitializer.cs" />
+    <Compile Include="Models\LibraryDbContext.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Purchase.cs" />
     <Compile Include="Models\Read.cs" />
     <Compile Include="Models\ReadContext.cs" />
@@ -245,7 +250,7 @@
     <Content Include="Views\Shared\_myLayoutPage.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_MenuBar.cshtml" />
-    <Content Include="Views\Home\AdminPage.cshtml" />
+    <Content Include="Views\Access\AdminPage.cshtml" />
     <Content Include="Views\Home\Shop.cshtml" />
     <Content Include="Content\Contact.css" />
     <Content Include="Views\Shared\_Comment.cshtml" />
@@ -256,8 +261,11 @@
     <Content Include="Views\Home\Library.cshtml" />
     <Content Include="Views\Home\Donation.cshtml" />
     <Content Include="Views\Account\Registr.cshtml" />
+    <Content Include="Views\Access\SignIn.cshtml" />
+    <Content Include="Views\Access\Welcome.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Default\" />
     <Folder Include="Views\Payment\" />
     <Folder Include="Views\Read\" />
     <Folder Include="Views\Registration\" />

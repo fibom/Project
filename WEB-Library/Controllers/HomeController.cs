@@ -57,6 +57,11 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public ActionResult About()
+    {
+        return View();
+    }
     public ActionResult LoginPage()
     {
         return View();

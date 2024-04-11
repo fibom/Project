@@ -1,6 +1,108 @@
 ﻿@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_myLayoutPage.cshtml";
 }
-<main aria-labelledby="title">
-    
-</main>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+            }
+
+        main {
+            padding: 20px;
+        }
+
+        .about-section, .team-section {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-member {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+        }
+
+            .team-member img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+            }
+
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section class="about-section">
+            <h2>Our Company</h2>
+            <p>Welcome to our company. We are dedicated to providing the best service in the industry. Our team of professionals is here to meet your needs and exceed your expectations.</p>
+        </section>
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-member">
+
+                <h3>Maliuta Olga</h3>
+                <p>1</p>
+            </div>
+            <div class="team-member">
+
+                <h3>Mita Reveca</h3>
+                <p>2</p>
+            </div>
+
+            <div class="team-member">
+
+                <h3>Sincariuc Pavel</h3>
+                <p>3</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </section>
+    </main>
+   
+</body>
+</html>
