@@ -22,12 +22,7 @@ namespace WEB_Library.Controllers
             return View();
         }
 
-        [HttpGet]
-        public ActionResult Buy(int id)
-        {
-            ViewBag.BookId = id;
-            return View();
-        }
+        
        
 
         public ActionResult AdminPage()

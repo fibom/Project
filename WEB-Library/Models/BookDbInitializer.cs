@@ -10,9 +10,9 @@ namespace WEB_Library.Models
 
         protected override void Seed(BookContext db)
         {
-            db.Books.Add(new Book { Name = "Война и мир", Author = "Л. Толстой", Price = 220 });
-            db.Books.Add(new Book { Name = "Отцы и дети", Author = "И. Тургенев", Price = 180 });
-            db.Books.Add(new Book { Name = "Чайка", Author = "А. Чехов", Price = 150 });
+            db.Books.Add(new Book { Name = "War and Peace", Author = "L.Tolstoy", Price = 220 });
+            db.Books.Add(new Book { Name = "Fathers and children", Author = "I.Turgenev", Price = 180 });
+            db.Books.Add(new Book { Name = "Seagull", Author = "A.Chekhov", Price = 150 });
 
             base.Seed(db);
         }
