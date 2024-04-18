@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Buy";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Покупка</title>
+
+    <style>
+
+*,
+*:before,
+*:after {
+    box-sizing:border-box;
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+  text-shadow:1px 1px 0 white;
+}
+
+        form {
+            max-width: 600px;
+            text-align: center;
+            margin: 20px auto;
+        }
+        input, textarea {
+            border: 0;
+            outline: 0;
+            padding: 1em;
+            border-radius: 8px;
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            font-family: 'Merriweather', sans-serif;
+            box-shadow: 0 1px 1px rgba(black, 0.1);
+            resize: none;
+        }
+    
+
+
+        #input-submit {
+            color: white;
+            background: red;
+            cursor: pointer;
+        }
+   
+  
+
+  textarea {
+      height: 126px;
+  }
+
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%;
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Order Registration</h1>
+        <form class="cf" method="post" action="">
+            <div class="half left cf">
+                <input type="hidden" value="@ViewBag.BookId" name="BookId" placeholder="Name">
+                <input type="text" name="Person" placeholder="Name">
+                <input type="text" id="input-email" placeholder="Address">
+                <input type="text" id="input-subject" placeholder="Subject">
+            </div>
+            <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="input-submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
