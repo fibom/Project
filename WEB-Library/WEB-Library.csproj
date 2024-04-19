@@ -175,6 +175,7 @@
     <Content Include="Content\Images\7.jpg" />
     <Content Include="Content\Images\d5bazwrc.png" />
     <Content Include="Content\loginpage.css" />
+    <Content Include="Content\shop.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

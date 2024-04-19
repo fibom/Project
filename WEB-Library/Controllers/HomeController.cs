@@ -51,6 +51,11 @@ namespace WEB_Library.Controllers
 
             return View();
         }
+        public ActionResult Shop()
+        {
+
+            return View();
+        }
         public ActionResult LoginPage()
         {
 
