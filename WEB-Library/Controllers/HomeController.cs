@@ -14,6 +14,11 @@ namespace WEB_Library.Controllers
             
             return View();
         }
+        public ActionResult Donation()
+        {
+
+            return View();
+        }
         public ActionResult AdminPage()
         {
             ViewBag.Message = "Your application description page.";
