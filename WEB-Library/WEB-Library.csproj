@@ -221,6 +221,7 @@
     <Content Include="Views\Home\Buy.cshtml" />
     <Content Include="Views\Home\Registration.cshtml" />
     <Content Include="Views\Shared\_myregistration.cshtml" />
+    <Content Include="Views\Home\Donation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Account\" />

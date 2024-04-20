@@ -66,9 +66,14 @@ namespace WEB_Library.Controllers
 
             return View();
         }
+        public ActionResult Registration()
+        {
+
+            return View();
+        }
 
 
 
 
-    }
+        }
 }
