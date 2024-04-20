@@ -218,6 +218,8 @@
     <Content Include="Views\Home\LoginPage.cshtml" />
     <Content Include="Views\Shared\_myLoginPage.cshtml" />
     <Content Include="Views\Home\Buy.cshtml" />
+    <Content Include="Views\Home\Registration.cshtml" />
+    <Content Include="Views\Shared\_myregistration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Account\" />
