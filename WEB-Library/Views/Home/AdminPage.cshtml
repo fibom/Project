@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+
+@{
+    ViewBag.Title = "Admin";
+    Layout = null;
+}
 <html lang="en">
 
 <head>
@@ -11,7 +15,7 @@
     <title>Web-Library</title>
     <link rel="stylesheet"
           href="~/Content/admin.css">
-  
+
 </head>
 
 <body>
@@ -20,7 +24,12 @@
     <header>
 
         <div class="logosec">
-            <div class="logo">Web-Library</div>
+            <div class="logo">
+                <a href="@Url.Action("Index", "Home")"
+                   style="text-decoration: none; color:green">
+                    Web-Library
+                </a>
+            </div>
             <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
                  class="icn menuicn"
                  id="menuicn"
