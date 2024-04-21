@@ -66,7 +66,7 @@ namespace WEB_Library.Controllers
 
             return View();
         }
-        public ActionResult Registration()
+        public ActionResult Donation()
         {
 
             return View();
