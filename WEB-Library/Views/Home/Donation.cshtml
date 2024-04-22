@@ -4,5 +4,111 @@
     Layout = null;
 }
 
-<h2>Donation</h2>
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_myLayoutPage.cshtml";
+}
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Book Sale</title>
+    <style>
+        /* Стили для таблицы и других элементов */
+        table {
+            margin: 0 auto; /* Центрирование таблицы по горизонтали */
+            width: 80%; /* Ширина таблицы */
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .image-column {
+            width: 100px; /* Ширина изображения */
+            height: 100px; /* Высота изображения */
+        }
+
+        /* Стили для кнопок "Read" */
+        .read-button {
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .read-button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <h3 style="text-align:center; margin-top:25px;">Book Sale</h3>
+    <hr style="width: 10%; margin: 0 auto; margin-bottom: 25px" />
+
+    <table>
+        @foreach (var b in ViewBag.Books)
+        {
+            <tr>
+                <!-- Пустая ячейка слева -->
+                <td></td>
+                <td class="image-column"><img src="~/Content/Images/3.jpg" alt="@b.Name" width="130" height="195"></td>
+                <td class="image-column"><img src="~/Content/Images/d5bazwrc.png" alt="@b.Name" width="130" height="195"></td>
+                <td class="image-column"><img src="~/Content/Images/5.jpg" alt="@b.Name" width="130" height="195"></td>
+                <td class="image-column"><img src="~/Content/Images/6.jpg" alt="@b.Name" width="130" height="195"></td>
+                <td class="image-column"><img src="~/Content/Images/7.jpg" alt="@b.Name" width="130" height="195"></td>
+                <!-- Пустая ячейка справа -->
+                <td></td>
+            </tr>
+            <tr>
+                <!-- Пустая ячейка слева -->
+                <td></td>
+                <td colspan="5">
+                    <!-- Кнопка "Read" с вызовом функции для показа текста -->
+                    <button class="read-button" onclick="toggleText('@b.Id')">Read</button>
+                </td>
+                <!-- Пустая ячейка справа -->
+                <td></td>
+            </tr>
+            <!-- Ячейка с текстом, начально скрыта -->
+            <tr id="@b.Id" style="display:none;">
+                <td colspan="7">Text for book @b.Name</td>
+            </tr>
+        }
+    </table>
+
+    <script>
+        function toggleText(id) {
+            var textElement = document.getElementById(id);
+            if (textElement.style.display === 'none') {
+                textElement.style.display = 'table-row';
+            } else {
+                textElement.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
