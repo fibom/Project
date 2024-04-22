@@ -42,7 +42,7 @@ namespace WEB_Library.Controllers
 
         public ActionResult AdminPage()
         {
-           
+
             return View();
         }
 
