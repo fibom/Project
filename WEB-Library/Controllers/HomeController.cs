@@ -70,13 +70,24 @@ namespace WEB_Library.Controllers
         {
 
             // получаем из бд все объекты Book
-            IEnumerable<Book> books = db.Books;
+            IEnumerable<Libraries> bookss = db.Library;
             // передаем все объекты в динамическое свойство Books в ViewBag
-            ViewBag.Books = books;
+            ViewBag.Library = bookss;
             // возвращаем представление
 
             return View();
         }
+        /*public ActionResult Donation()
+        {
+
+            // получаем из бд все объекты Book
+            IEnumerable<Book> bookss = db.Books;
+            // передаем все объекты в динамическое свойство Books в ViewBag
+            ViewBag.Books = bookss;
+            // возвращаем представление
+
+            return View();
+        }*/
 
 
 
