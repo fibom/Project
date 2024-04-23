@@ -141,6 +141,7 @@
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookContext.cs" />
     <Compile Include="Models\BookDbInitializer.cs" />
+    <Compile Include="Models\LibraryInitializer.cs" />
     <Compile Include="Models\Purchase.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,6 +171,7 @@
     <Content Include="Content\Images\2.jpg" />
     <Content Include="Content\Images\3.jpg" />
     <Content Include="Content\Images\4.png" />
+    <Content Include="Content\Images\435583-0.jpeg" />
     <Content Include="Content\Images\4522407326f51c40c24701f99d5ed077-removebg-preview.png" />
     <Content Include="Content\Images\5.jpg" />
     <Content Include="Content\Images\6.jpg" />
