@@ -5,12 +5,12 @@ using System.Web;
 
 namespace WEB_Library.Models
 {
-    public class Libraries
+    public class Librari
     {
         // ID книги
         public int Id { get; set; }
         // название книги
-        public string Title { get; set; }
+        public string Name { get; set; }
         // автор книги
         public string Author { get; set; }
         // цена
