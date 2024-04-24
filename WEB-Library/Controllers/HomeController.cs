@@ -66,7 +66,7 @@ namespace WEB_Library.Controllers
 
             return View();
         }
-        public ActionResult Donation()
+        /*public ActionResult Donation()
         {
 
             // получаем из бд все объекты Book
@@ -76,8 +76,8 @@ namespace WEB_Library.Controllers
             // возвращаем представление
 
             return View();
-        }
-        /*public ActionResult Donation()
+        }*/
+        public ActionResult Donation()
         {
 
             // получаем из бд все объекты Book
@@ -87,7 +87,7 @@ namespace WEB_Library.Controllers
             // возвращаем представление
 
             return View();
-        }*/
+        }
 
 
 

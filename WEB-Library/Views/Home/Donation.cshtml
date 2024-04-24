@@ -40,10 +40,10 @@
     <hr style="width: 10%; margin: 0 auto; margin-bottom: 25px;" />
     <table>
         
-        @foreach (var b in ViewBag.Library)
+        @foreach (var b in ViewBag.Books)
         {
             <tr>
-                <td><p>@b.Title</p></td>
+                <td><p>@b.Name</p></td>
                 <td><p>@b.Author</p></td>
                 <td><p>@b.Price $</p></td>
                 

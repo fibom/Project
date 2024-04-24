@@ -141,8 +141,6 @@
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookContext.cs" />
     <Compile Include="Models\BookDbInitializer.cs" />
-    <Compile Include="Models\Libraries.cs" />
-    <Compile Include="Models\LibraryInitializer.cs" />
     <Compile Include="Models\Purchase.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
