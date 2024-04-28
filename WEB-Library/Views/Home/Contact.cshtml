@@ -51,8 +51,47 @@
                 <button type="submit">Send</button>
             </form>
         </section>
-        
 
+        <div class="book-sale" style="margin-top:25px;">
+            <h3 style="text-align:center; margin-top:25px;">
+                Our partners
+            </h3>
+            <hr style="width: 10%; margin: 0 auto; margin-bottom: 25px" />
+            <table>
+                <tr>
+                    <td><p>Id</p></td>
+                    <td><p>Name</p></td>
+
+                    <td></td>
+                </tr>
+                @foreach (var b in ViewBag.Users)
+                {
+                    <tr>
+                        <td><p>@b.Id</p></td>
+                        <td><p>@b.Username</p></td>
+
+
+                    </tr>
+                }
+
+            </table>
+
+
+        </div>
+
+        <section class="contact-form">
+            <h2>Add Partner</h2>
+            @using (Html.BeginForm("Add", "User", FormMethod.Post))
+            {
+                <label for="username">
+                    Partner name:
+                </label>
+                <input type="text" id="username" name="Username" required>
+                <button type="submit">
+                    Add partner
+                </button>
+            }
+        </section>
 
 </body>
 </html>

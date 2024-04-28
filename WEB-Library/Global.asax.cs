@@ -15,6 +15,7 @@ namespace WEB_Library
         protected void Application_Start()
         {
             Database.SetInitializer(new BookDbInitializer());
+            Database.SetInitializer(new UserDbInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
