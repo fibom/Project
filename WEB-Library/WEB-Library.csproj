@@ -265,7 +265,6 @@
     <Content Include="Views\Access\Welcome.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Default\" />
     <Folder Include="Views\Payment\" />
     <Folder Include="Views\Read\" />
     <Folder Include="Views\Registration\" />
